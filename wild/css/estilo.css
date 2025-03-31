@@ -1,0 +1,219 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Atma', sans-serif; 
+}
+
+#main {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-image: url('/img/animais.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+#top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #003366, #0066cc);
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    padding: 15px 0;
+    font-size: 18px;
+    font-family: 'Amatic SC', cursive; 
+}
+
+#menu {
+    font-family: 'Amatic SC', sans-serif;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+#menu li {
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+#menu li:hover {
+    background-color: rgba(47, 255, 234, 0.3);
+    transform: scale(1.05);
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+#side-nav {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 220px;
+    height: calc(100vh - 80px);
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    font-family: 'Homemade Apple', cursive; 
+}
+
+#side-nav ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#side-nav li {
+    margin: 15px 0;
+    padding: 8px 0;
+}
+
+#side-nav a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#side-nav a:hover {
+    color: #ddd;
+    background-color: rgba(0, 51, 128, 0.7);
+    border-radius: 5px;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url("../img/animais.jpg");
+    background-attachment: fixed;
+}
+
+
+#content {
+    padding: 3%;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    min-height: 200px;
+    margin-left: 240px;
+    font-size: 18px;
+    font-family: 'Atma', sans-serif; 
+}
+
+#footer {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(71, 73, 2);
+    position: relative;
+    margin-top: 20px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-family: 'Lavishly Yours', cursive; 
+}
+
+#footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: blue; 
+}
+
+p {
+    color: red; 
+}
+
+
+h2 {
+    color: #ff5733; 
+}
+
+section {
+    background-color: rgb(255, 99, 71); 
+}
+
+footer {
+    
+    color: rgb(0, 123, 255); 
+}
+
+
+header {
+    background-color: rgba(0, 76, 255, 0.5); 
+}
+
+button {
+    background-color: rgba(34, 193, 195, 0.8); 
+}
+
+@media screen and (max-width: 800px) {
+    #top-nav {
+        position: relative;
+    }
+
+    #side-nav {
+        position: relative;
+        width: 100%;
+        top: 0;
+        height: auto;
+    }
+
+    #side-nav ul {
+        padding-left: 10px;
+    }
+
+    #content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #menu {
+        display: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    #toggle:checked + #menu {
+        display: block;
+    }
+
+    #menu li {
+        display: block;
+        padding: 15px;
+        text-align: left;
+    }
+
+    #toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    #l-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+}
