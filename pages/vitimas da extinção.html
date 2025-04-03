@@ -5,18 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animais em Extinção</title>
     <link rel="stylesheet" href="../css/estilo-semantico.css">
+    <link rel="stylesheet" href="../css/vendor/material-icons.css"> <!-- Para os ícones, se necessário -->
 </head>
-<body><header>
-    <nav>
-        <a href="../index.html">Pagína Inicial</a></li>
-        <a href="aves.html">Aves</a></li>
-        <a href="mamiferos.html">Mamíferos</a></li>
-        <a href="repteis.html">Reptéis</a></li>
-        <a href="marsupiais.html">Marsupiais</a></li>
-        <a href="vitimas da extinção.html">Vitimas de extinção</a></li>
-        <a href="contato.html">Contato</a></li>
-        <a href="comentarios.html">comentarios</a></li>
+<body>
+    <header>
+        <nav id="top-nav">
+            <label id="l-toggle" for="toggle">
+                <i class="material-icons">Menu</i>
+            </label>
+            <input type="checkbox" id="toggle">
+            <ul id="menu">
+                <li><a href="../index.html"><i class="material-icons"> Página Inicial</a></li>
+                <li><a href="../aves.html"><i class="material-icons">Aves</a></li>
+                <li><a href="../mamiferos.html"><i class="material-icons">Mamíferos</a></li>
+                <li><a href="repteis.html"><i class="material-icons">Répteis</a></li>
+                <li><a href="marsupiais.html"><i class="material-icons">Marsupiais</a></li>
+                <li><a href="vitimas da extinção.html"><i class="material-icons">Vítimas de Extinção</a></li>
+                <li><a href="contato.html"><i class="material-icons">Contato</a></li>
+                <li><a href="comentarios.html"><i class="material-icons">comentários</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="side-nav">
+        <ul>
+            <li><a href="../index.html">Página Inicial</a></li>
+            <li><a href="aves.html">Aves</a></li>
+            <li><a href="mamiferos.html">Mamíferos</a></li>
+            <li><a href="repteis.html">Répteis</a></li>
+            <li><a href="marsupiais.html">Marsupiais</a></li>
+            <li><a href="vitimas da extinção.html">Vítimas de Extinção</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="comentarios.html">Comentários</a></li>
+        </ul>
     </nav>
+
     <div id="main">
         <h1>Animais em Extinção</h1>
 
@@ -45,17 +68,16 @@
                     <td>Círculo Polar Ártico</td>
                 </tr>
                 <tr>
-                    <td>Baleias azuis</td>
+                    <td>Baleias Azuis</td>
                     <td>5%</td>
                     <td>Todos os oceanos do planeta</td>
                 </tr>
-                
             </tbody>
         </table>
     </div>
 
-    <div id="footer">
+    <footer id="footer">
         <p>© Desenvolvido por Riquelme.</p>
-    </div>
+    </footer>
 </body>
 </html>
